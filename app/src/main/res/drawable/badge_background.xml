@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item xmlns:android="http://schemas.android.com/apk/res/android">
+        <shape android:shape="oval">
+            <solid android:color="@drawable/tab_text_color_selector" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calls"
+            android:textColor="@drawable/tab_text_color_selector"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/badge_background"
+            android:gravity="center"
+            android:text="99"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>

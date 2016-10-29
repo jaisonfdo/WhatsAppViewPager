@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorTextPrimary"
+            app:tabTextColor="@color/colorTextDisable">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab1"
+                android:icon="@drawable/tab_call_selector"
+                style="@style/tab_item"
+                android:text="@string/tab1" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab2"
+                android:icon="@drawable/tab_chat_selector"
+                style="@style/tab_item"
+                android:text="@string/tab2" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab3"
+                android:icon="@drawable/tab_contacts_selector"
+                style="@style/tab_item"
+                android:text="@string/tab3" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
